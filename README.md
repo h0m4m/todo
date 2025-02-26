@@ -24,3 +24,45 @@ This is a web-based To-Do List application built with Flask and SQLAlchemy. It a
    ```sh
    git clone https://github.com/yourusername/todo-app.git
    cd todo-app
+   ```
+
+2. Create a virtual environment and activate it:
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. Install the required packages:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+4. Set up the database:
+   ```sh
+   flask db init
+   flask db migrate
+   flask db upgrade
+   ```
+
+5. Run the application:
+   ```sh
+   flask run
+   ```
+
+## Usage
+
+- Navigate to `http://127.0.0.1:5000/` in your web browser to access the application.
+- Use the navigation bar to switch between List, Calendar, and Kanban views.
+- Add, edit, delete, and manage tasks as needed.
+- Generate AI plans for tasks by clicking the "AI Plan" button.
+
+## File Structure
+
+- app.py: Main application file containing routes and logic.
+- templates: Directory containing HTML templates for different views.
+  - index.html: Template for the List view.
+  - calendar.html: Template for the Calendar view.
+  - kanban.html: Template for the Kanban view.
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
