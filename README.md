@@ -1,4 +1,4 @@
-# To-Do List Application
+# To-Do List Application (with AI)
 
 This is a web-based To-Do List application built with Flask and SQLAlchemy. It allows users to manage their tasks using different views: List, Calendar, and Kanban. The application also integrates with Google Gemini AI to generate task plans.
 
